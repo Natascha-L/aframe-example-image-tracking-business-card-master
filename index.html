@@ -39,7 +39,7 @@
 
         <!-- PRE-LOAD OUR ASSETS FOR PERFORMANCE -->
         <a-assets>
-            <a-asset-item id="target-file" src="BusinessCard.zpt"/>
+
         </a-assets>
         <!-- END ASSET PRE-LOADING -->
 
@@ -48,7 +48,7 @@
         <a-camera zappar-camera cursor="rayOrigin: mouse; fuse: false;" raycaster="objects: .collidable"></a-camera>
 
         <!-- SET UP OUR EXPERIENCE AS IMAGE TRACKING & GIVE IT AN IMAGE TO TRACK -->
-        <a-entity zappar-image="#target-file" >
+        <a-entity zappar-image="target: assets/BusinessCard.zpt">
             <!-- Have a group that will only become visible when the target image comes into view-->
             <a-entity visibility-changer position="0 0 0">
 
